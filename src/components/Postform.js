@@ -2,13 +2,12 @@ import React, { Component } from 'react'
 
  class Postform extends Component {
    // In newer version we need not declare constructor and can use es6 which doesn't loose the reference to 'this' keyword
-  // We can skip binding the data 
+   // We can skip binding the data 
    constructor(props){
          super(props);
          this.state = {
              title: '',
-             body: ''
-            
+             body: '' 
          };
 
          this.onChange = this.onChange.bind(this);
