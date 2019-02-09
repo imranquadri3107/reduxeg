@@ -7,7 +7,6 @@ import { fetchPosts} from '../actions/postAction';
          this.props.fetchPosts();
      }
 
-     
   render() {
       const postItems = this.state.posts.map(post=>(
           <div key = {post.id}>
