@@ -9,7 +9,7 @@ export default function(state = initialState, action){
     switch(action.type){
         case FETCH_POSTS:
         return{
-            ...state,
+            ...state, // creating the new object so that we can keep the track of previous state
             items: action.payload
         }
         default:
